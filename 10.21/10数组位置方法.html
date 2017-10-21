@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>今天天气不错</title>
+  <script>
+    //indexOf()  和  lastIndexOf()  在ie9以下不支持
+    //数组.indexOf()
+    //1 作用：用于查找数组中指定元素的索引值
+    //2 参数含义：参数1，要查找的元素值， 参数2:（可选）默认值为0，表示检索的起始位置索引值
+    //3 返回值：如果找到，返回索引值(数值类型)  如果没找到，返回-1
+    
+    //4 例子：
+    
+    //问题：如果一个数组中具有多个满足条件的元素，一次使用indexOf时无法得到所有的结果。
+    var arr = ["a", "b", "a", "c", "a", "a", "b", "a", "c", "a", "a", "b", "a", "c", "a", "a", "b", "a", "c", "a", "a"];
+    var indexArr = [];//用于保存找到的索引值
+    //先使用变量保存第一次获取到的索引值
+    //var index = arr.indexOf("a", 0);
+    //indexArr.push(index);
+    
+    //上面两句可以化简为以下代码
+    var index = -1;//-1的意思是位置while的条件第一次可以获取到0，从开始位置进行查找
+    
+    //再查找一次
+    /*index = arr.indexOf("a", index + 1);
+     console.log(index);
+     //再查找一次
+     index = arr.indexOf("a", index + 1);
+     console.log(index);*/
+    
+    //我们发现，代码是重复的，并且执行次数不定（a出现的次数无法确定）
+    while (arr.indexOf("a", index + 1) != -1) {//条件为，必须当前还存在a，才进行继续查找
+      index = arr.indexOf("a", index + 1);
+      indexArr.push(index);
+    }
+    console.log(indexArr);
+    
+    
+    //数组.lastIndexOf()
+  
+  
+  </script>
+</head>
+<body>
+
+
+</body>
+</html>

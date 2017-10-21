@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>今天天气不错</title>
+  <script>
+    //Date对象
+    
+    //1 创建方式
+    //var date = new Date();
+    
+    //1.1 当前时间
+    //var date = new Date();
+    
+    //1.2 具体的某一个时间
+    //var date = new Date("2015-1-1 12:12:12");
+    //如果传入的参数为数值，月份是从0开始，如果月份大于11，可能会跨年
+    //var date = new Date(2015,13,1,12,12,12);
+    //console.log(date);
+    
+    //2 date对象的方法
+    //作用：用于获取日期中的某个部分
+    var date = new Date();
+    //获取年份
+    console.log(date.getFullYear());
+    
+    //获取月份:月份从0开始，使用时注意要加1
+    console.log(date.getMonth()+1);
+    
+    //获取日
+    console.log(date.getDate());
+    
+    //获取星期:  星期是从0开始的，但是0表示周日
+    console.log(date.getDay());
+
+    //获取小时：
+    console.log(date.getHours());
+    
+    //获取分钟：
+    console.log(date.getMinutes());
+    
+    //获取秒：
+    console.log(date.getSeconds());
+    
+    //获取毫秒： 0-999
+    //1秒 是 1000毫秒
+    console.log(date.getMilliseconds());
+    
+    
+    //练习：
+    //获取当前时间，打印以下形式的字符串：  "yyyy-mm-dd hh:mm:ss.ms"
+
+
+  </script>
+</head>
+<body>
+
+
+
+</body>
+</html>

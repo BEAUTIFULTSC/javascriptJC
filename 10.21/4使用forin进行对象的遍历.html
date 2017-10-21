@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>今天天气不错</title>
+  <script>
+    //数组是复杂数据类型，对象也是复杂数据类型的一种。
+    
+    //数组中的数据是按照索引排列的，所以我们也称数组是一种有序的数据存储方式。
+    //对象中的数据是按照属性名保存的，所以我们也称对象是一种无序的数据存储方式
+    
+    
+    //由于数组是有序的数据存储方式，所以在遍历时可以使用for循环。
+    //但是对象是无序的数据存储方式，在遍历时需要使用一种特殊的方式进行操作。
+    
+    
+    //for..in
+    
+    //var k 相当于循环变量    obj表示要进行遍历的对象
+    var obj = {
+      name: "张三",
+      age: 18,
+      sayHi: function () {
+        console.log("我是sayHi");
+      }
+    };
+    
+    for (var k in obj) {
+      //for..in中：
+      //k 代表 属性名 -- 字符串类型
+      //obj[k] 代表 属性值
+      console.log(k);
+      //console.log(obj[k]);
+  
+      //对象的属性不存在值为undefined
+      //数组的元素不存在值为undefined
+      //console.log(obj.k);
+  
+    }
+  
+  
+  </script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>今天天气不错</title>
+  <script>
+    //数组.reverse()  会修改原数组
+    //返回值为原数组（和原数组是同一个数据，不需要进行接收）
+    /*var arr = [1,2,3,4,5];
+     var resultArr = arr.reverse();
+     console.log(arr,resultArr);
+     arr[0] = 100;
+     console.log(arr,resultArr);*/
+    
+    //数组.sort();  会修改原数组
+    //1 对字符串数组进行排序:按照首字母进行排序
+    //var arr = ["b","a","j","c","ahugi"];
+    //arr.sort().reverse();
+    //console.log(arr);
+    
+    //2 对数值数组进行排序
+    //问题：如果直接进行排序操作，会按照首字符进行排序（不好使）
+    //var arr = [7,5,8,6,3,11,22,9,2,1,4];
+    //arr.sort();
+    //console.log(arr);
+    
+    //注意：对数值数组排序时，必须传入指定参数
+    var arr = [7, 5, 8, 6, 3, 11, 22, 9, 2, 1, 4];
+    
+    //升序的参数形式：  function(a,b){return a-b;}
+    //arr.sort(function (a,b) {
+    //  return a-b;
+    //});
+    
+    //降序的参数形式：   function(a,b){return b-a;}
+    arr.sort(function (a, b) {
+      return b - a;
+    });
+    
+    console.log(arr);
+  
+  
+  </script>
+</head>
+<body>
+
+
+</body>
+</html>

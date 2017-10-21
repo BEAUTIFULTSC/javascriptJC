@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>今天天气不错</title>
+  <script>
+    //JSON
+    //作用：一种数据交换格式。
+    //格式：跟对象字面量的结构几乎相同，区别是属性名必须加双引号
+    /* var json = {
+     "name":"张三",
+     "age":18
+     };*/
+    
+    
+    //使用JSON的两个功能(此处用于举例，现在不需要掌握)：
+    
+    //将一个数据进行网络传递时，一定是字符形式传递的。
+    
+    //如果我们想要将一个JSON对象形式进行传输，第一步就是转换为字符串的形式
+    
+    //我们发现常规的字符串转换方式对于对象不适用
+    //console.log(json.toString());
+    
+    //console.log(json);
+    //console.log(JSON.stringify(json));//'{"name":"张三","age":18}'
+    
+    //假设str是我们从服务器段接收到的数据，是一个字符串
+    //var str = '{"name":"张三","age":18}';
+    //var str = "{'name':'张三','age':18}";//单引号不行
+    ////转换为对象形式
+    //console.log(JSON.parse(str));
+  
+  
+  </script>
+</head>
+<body>
+
+
+</body>
+</html>
